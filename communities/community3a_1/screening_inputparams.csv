@@ -1,0 +1,11 @@
+Parameter,MinValue,MaxValue
+va1,0.001,170
+va2,0.001,170
+va3,0.001,170
+gammaa5,0.12,120
+gammaa6,0.12,120
+gammaa9,0.12,120
+alpha1,0.06,600
+alpha2,0.06,600
+alpha3,0.06,600
+n,1,5

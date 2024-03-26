@@ -1,0 +1,94 @@
+
+To push files
+
+git add .
+git commit -m "statement"
+git push
+
+
+To get files
+
+git pull 
+
+To reset hard
+
+git reset --hard
+git fetch --all 
+
+
+Run following commands
+
+pip install --upgrade pip
+pip install --upgrade scipy
+pip install --upgrade cobra
+pip install --upgrade pymoo
+pip install --upgrade smt SALib
+pip install psutil 
+pip install sweetviz 
+pip install ydata_profiling 
+pip install matplot 
+pip install scikit-learn 
+pip install plotly
+
+
+M1
+https://caffeinedev.medium.com/how-to-install-tensorflow-on-m1-mac-8e9b91d93706
+pip install -U dm-sonnet==1.23
+pip install --upgrade tfp-nightly
+pip install xgboost
+
+
+Edit the file DyMMMSettings.py and set the name of community you want to work with
+to run DyMMMM
+	python main_runDyMMM.py
+	
+to plot
+	set the path to the file you want to plot in main_showPlots.py
+	python main_showPlots.py
+
+First time
+	copy screeing_params into results directory
+	run DyMMMSamplesSobol.py
+
+python DyMMMBatchSimulator2.py
+python DyMMMDataAnalyzer.py
+python DyMMMSamplesAdaptive.py
+
+
+
+
+Note- depending on python version pymoo may require code changes.
+
+
+
+
+
+Create a directory results in communitypred_cstr then:
+1. main_aggregateresult1 - creates combined PARAM and RESULT file in results directory in communities dir
+2. main_clusterAnalyticsOnCSIStability.py - comment out code whether normalized or not and also for feature importance
+3. main_plot_ridge.py - you need to select the clusters from line 30, 31 in file
+4. main_plot_stability_box.py - to get box plots and also data for piechart on the output log
+
+
+DyMMMFeatureImportance
+	inputs - RESULTS csv
+	outputs - graph
+DyMMMMetrics
+	inputs - RESULTS csv
+	output - hypervolume
+DyMMMTest - generates the surrogate model and tests its accuracy  - not required
+
+
+main_calculateClassificationError
+main_combineNumpy
+main_findRange
+main_GeneratePredictionError
+main_generateResult
+main_getErrorGraph
+main_showDataPlots
+main_showPlots
+
+Notes
+M1 and M2 are not used anymore
+BIOMASS_SS is error in steady state
+

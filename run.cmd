@@ -1,0 +1,3 @@
+python DyMMMBatchSimulator2.py
+python DyMMMDataAnalyzer.py
+python DyMMMSamplesAdaptive.py
